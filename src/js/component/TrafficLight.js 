@@ -1,16 +1,7 @@
 //Import REACT
-//import React from "react";
-import ReactDOM from "react-dom";
 import React, { useState } from "react";
 
-//Import BOOTSTRAP
-import "bootstrap";
-
-//Styles
-//import "../styles/index.scss";
-import "../styles/trafficlight.css";
-//Components
-//import TrafficLight from "./component/TrafficLight.js";
+//An arrow function is declared to develop the actions of the traffic light, using the hook useState and applying an onClick attribute to change the light at the moment of clicking.
 const TrafficLight = () => {
 	//Define the hooks to be used in the function
 	const [lightColor, setLightColor] = useState("red");
@@ -42,5 +33,4 @@ const TrafficLight = () => {
 	);
 };
 
-//Render application, to verify that the light shines when any of the traffic light colors are clicked
-ReactDOM.render(<TrafficLight />, document.querySelector("#app"));
+export default TrafficLight;
