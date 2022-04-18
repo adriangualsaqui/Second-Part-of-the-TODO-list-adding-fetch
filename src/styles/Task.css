@@ -1,0 +1,11 @@
+li {
+    list-style: none;
+}
+
+li:hover > button {
+    display: inline !important;
+}
+
+button {
+    text-shadow: 3px 5px 5px grey;
+}
