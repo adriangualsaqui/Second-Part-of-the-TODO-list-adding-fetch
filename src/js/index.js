@@ -1,21 +1,15 @@
+//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
 
-// Resources
+//include bootstrap npm library into the bundle
 import "bootstrap";
+
+//include your index.scss file into the bundle
 import "../styles/index.css";
 
-// Components
-import TaskList from "./component/TaskList.js";
-import TaskListPlaceHolder from "./component/TasksListPlaceHolder.js";
-import Task from "./component/Task.js";
+//import your own components
+import Home from "./component/home.js";
 
-// Logic
-ReactDOM.render(
-	<TaskList
-		inputPlaceHolder="Nueva tarea..."
-		listPlaceHolder={TaskListPlaceHolder}
-		taskComponent={Task}
-	/>,
-	document.querySelector("#app")
-);
+//render your react application
+ReactDOM.render(<Home />, document.querySelector("#app"));
